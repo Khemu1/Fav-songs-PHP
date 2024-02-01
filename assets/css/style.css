@@ -1,0 +1,104 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 150px;
+}
+.add-area {
+  margin-top: 50px;
+  background-color: rgba(32, 218, 218, 0.534);
+  padding: 20px;
+  border-radius: 10px;
+  height: 100px;
+}
+.add-area form {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.add-area form .inputs {
+  display: grid;
+  gap: 5px;
+  grid: 1fr/ 1fr;
+  align-items: center;
+  justify-items: center;
+}
+.inputs div {
+  display: flex;
+  gap: 10px;
+  min-height: 30px;
+  align-items: center;
+}
+input {
+  width: 250px;
+  height: 20px;
+  border: 0.5px solid transparent;
+  border-radius: 10px;
+  padding: 5px;
+}
+input:focus-visible {
+  outline: none;
+}
+button {
+  width: 100px;
+  height: 50px;
+  border-radius: 20px;
+  border: none;
+  transition: border 250ms ease-in-out;
+  margin-bottom: 39px;
+}
+button:hover {
+  cursor: pointer;
+  border: 0.5px solid #000;
+}
+label {
+  font-weight: bold;
+}
+.song-area {
+  margin-top: 50px;
+  background-color: rgba(32, 218, 218, 0.534);
+  padding: 20px;
+  border-radius: 10px;
+  height: fit-content;
+  display: grid;
+  gap: 25px;
+}
+.song-area form {
+  display: grid;
+  grid: 1fr / 1fr auto auto;
+  align-items: center;
+  justify-items: center;
+  column-gap: 5px;
+  gap: 10px;
+}
+.info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.song-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.song,
+.artist {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background-color: gray;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  text-overflow: ellipsis;
+  overflow-x: hidden;
+}
+.song-area button {
+  width: 70px;
+  height: 40px;
+  margin: unset;
+  font-weight: bold;
+  font-size: 16px;
+  align-items: center;
+}
